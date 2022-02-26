@@ -5,26 +5,19 @@ import org.springframework.stereotype.Component;
 
 /**
  * packageName: net.hyuck.web.api.member.domain
- * fileName   : memberDTO
+ * fileName   : CalcDTO
  * author     : HYUCK7
- * date       : 2022/02/13
+ * date       : 2022/02/26
  * desc       :
  * ================================
  * DATE            AUTHOR         NOTE
  * ================================
- * 2022/02/13         HYUCK7         최초 생성
+ * 2022/02/26         HYUCK7         최초 생성
  */
 @Data
 @Component
-public class MemberDTO {
-    private String name;
-    private double weight;
-    private double height;
-    private int kor;
-    private int eng;
-    private int math;
-    private int total;
-    private int avg;
-
-
+public class CalcDTO {
+    int num1;
+    int num2;
+    String opcode;
 }
