@@ -1,13 +1,11 @@
 package net.hyuck.web.api.member.controller;
 
-import lombok.Generated;
+
 import lombok.RequiredArgsConstructor;
 import net.hyuck.web.api.member.domain.CalcDTO;
 import net.hyuck.web.api.member.domain.MemberDTO;
 import net.hyuck.web.api.member.service.MemberService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * packageName: net.hyuck.web.api.member.controller
@@ -20,20 +18,25 @@ import org.springframework.web.bind.annotation.RestController;
  * ================================
  * 2022/02/26         HYUCK7         최초 생성
  */
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/member")
-@RequiredArgsConstructor
 public class MemberController {
     private final MemberService service;
+    @PostMapping("/bmi")
+    public String getBmi(@RequestBody MemberDTO bmi){
+        return service.bmi(bmi);
+    }
+    public String getLogin(@RequestBody MemberDTO login){
+        return service.login(login);
+    }
+    public String getCalc(@RequestBody CalcDTO calc){
 
-    public String calc(CalcDTO calc) {
-        return null;
+        return service.calc(calc);
     }
-    public String grade(MemberDTO member){
-        return null;
+    public String getGrade(@RequestBody MemberDTO grade){
+        return service.grade(grade);
     }
-    public String login(MemberDTO member){
-        return null;
-    }
+
 
 }

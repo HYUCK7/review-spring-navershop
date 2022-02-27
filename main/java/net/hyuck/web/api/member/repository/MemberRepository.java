@@ -1,8 +1,5 @@
 package net.hyuck.web.api.member.repository;
 
-import net.hyuck.web.api.member.domain.CalcDTO;
-import net.hyuck.web.api.member.domain.MemberDTO;
-import org.springframework.stereotype.Repository;
 
 /**
  * packageName: net.hyuck.web.api.member.repository

@@ -17,6 +17,13 @@ import net.hyuck.web.api.member.domain.MemberDTO;
  */
 
 public interface MemberService {
-    
 
+
+    String bmi(MemberDTO bmi);
+
+    String login(MemberDTO login);
+
+    String calc(CalcDTO calc);
+
+    String grade(MemberDTO grade);
 }

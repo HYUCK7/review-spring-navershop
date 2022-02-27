@@ -1,7 +1,7 @@
 package net.hyuck.web.api.member.repository;
 
-import net.hyuck.web.api.member.domain.CalcDTO;
-import net.hyuck.web.api.member.domain.MemberDTO;
+
+import org.springframework.stereotype.Repository;
 
 /**
  * packageName: net.hyuck.web.api.member.repository
@@ -14,6 +14,7 @@ import net.hyuck.web.api.member.domain.MemberDTO;
  * ================================
  * 2022/02/26         HYUCK7         최초 생성
  */
+@Repository
 public class MemberRepositoryImpl implements MemberRepository{
 
 }
